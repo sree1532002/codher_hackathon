@@ -67,7 +67,6 @@
           <div class = "logbtn col-md-12"><button type="submit" class="btn btn-primary" name = "login">Join the club</button></div>
         </div>
       </div>
-<<<<<<< HEAD
   
       <div class="card">
   <div class="card-body">
@@ -91,8 +90,6 @@
 </div>
 
 
-=======
->>>>>>> 676398b1993523ad258ee8b0d6aa405e80e7220a
     </div>
   </div>
   </body>
