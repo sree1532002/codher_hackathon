@@ -53,7 +53,7 @@
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name = "pword" required>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                     <label class="form-check-label" for="exampleCheck1">Remember me</label>
                 </div>
                 <div class = "logbtn col-md-12 text-center"><button type="submit" class="btn btn-primary" name = "signup">Submit</button></div>

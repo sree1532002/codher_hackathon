@@ -25,14 +25,14 @@
                 <div class = "logtxt">Login</div>
                 <div class="form-group">
                     <!--<label for="exampleInputEmail1">We need your Username!</label>-->
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" name = "uname">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" name = "uname" required>
                 </div>
                 <div class="form-group pw">
                     <!--<label for="exampleInputPassword1">And Password (Dw, it's safe with us!)</label>-->
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name = "pword">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name = "pword" required>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                     <label class="form-check-label" for="exampleCheck1">Remember me</label>
                 </div>
                 <div class = "logbtn col-md-12 text-center"><button type="submit" class="btn btn-primary" name = "login">Submit</button></div>

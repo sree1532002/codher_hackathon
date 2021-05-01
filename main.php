@@ -130,7 +130,7 @@ function topFunction() {
 <?php }else{
   echo "<script>";
   echo "alert('Please login/signup to continue');";
-  echo "window.location.href='main.php';";
+  echo "window.location.href='index.php';";
   echo "</script>";
 }
 ?>
