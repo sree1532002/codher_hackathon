@@ -14,10 +14,10 @@
   </head>
   <body>
    <!-- Footer -->
-<footer class="page-footer font-small unique-color-dark" id ="footer">
+<footer class="page-footer font-small unique-color-dark">
 
 <div style="background-color: #b8b5ff;">
-  <div class="container">
+  <div class="container" id ="contact">
 
     <!-- Grid row-->
     <div class="row py-4 d-flex align-items-center">

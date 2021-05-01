@@ -31,7 +31,7 @@ if(isset($_SESSION['login'])){
             <a class="nav-link"  id = "item" href="#">Home</a>
           </li>
           <li class="nav-item" >
-            <a class="nav-link"  id = "item" href="main.php#about">About</a>
+            <a class="nav-link"  id = "item" href="#about1">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id = "item" href="#clubs">Clubs</a>
@@ -48,14 +48,14 @@ if(isset($_SESSION['login'])){
         </ul>
       </div>
     </div>
-    <div id="bg" id = "about">
-        <h1 class="mm">About</h1>
+    <div id="bg">
+        <h1 class="mm" id = "about1">About</h1>
         <div class="about">
         <p >Getting involved in an extracurricular club could be one of the highlights of your time on campus. Whether you’re a head-of-the-class, perfect-GPA, volunteers-at-the-nursing-home-on-weekends kind of student, or a stay-out-late-on-Thursday, avoid-taking-classes-on-Friday-morning, in-it-for-the-personal-growth type of student, there’s an activity out there for you. And in many cases, that club could plug you into a national network of like-minded groups, individuals, and possibly even future employers. </p>
         </div>
     </div>
-    <div id="bg" id = "clubs">
-        <h1 class="mm">Clubs</h1>
+    <div id="bg">
+        <h1 class="mm" id = "clubs">Clubs</h1>
     </div>
     <!-- clubs-->
 
