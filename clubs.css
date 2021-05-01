@@ -38,4 +38,11 @@ font-size: x-large;
 .col-md-4 {
     padding: 20px!important;
 }
+.card{
+    padding:50px;
+}
+.card-body{
+    padding: 10px;
+    margin:30px;
+}
   
