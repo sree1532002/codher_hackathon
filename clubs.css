@@ -5,6 +5,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     color: #1c1c1d;
+    background-color: #fff0f2;
 }
 .about{
 padding: 30px;
@@ -23,6 +24,9 @@ font-size: x-large;
     text-decoration: none;
     display: inline-block;
 }
+.card {
+    border: none!important;
+}
 .card-title{
     text-align: left;
     font-size: 30px;
@@ -38,11 +42,16 @@ font-size: x-large;
 .col-md-4 {
     padding: 20px!important;
 }
+<<<<<<< HEAD
 .card{
     padding:50px;
 }
 .card-body{
     padding: 10px;
     margin:30px;
+=======
+.input-group{
+    padding-right: 20px!important;
+>>>>>>> 676398b1993523ad258ee8b0d6aa405e80e7220a
 }
   
