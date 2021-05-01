@@ -1,19 +1,11 @@
 .welcome {
     text-align: center;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 400;
     padding-top: 20px;
+    padding-bottom: 20px;
+    color: #1c1c1d;
 }
-.gridimg {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-
-}
-.grid {
-    height: 500px;
-}
-
 .about{
 padding: 30px;
 font-size: x-large;
@@ -22,13 +14,28 @@ font-size: x-large;
     margin: 10px;
     border-radius: 10px;
     font-size: 20px;
-  }
-  #item:hover, #item:active {
+}
+#item:hover, #item:active {
     background-color: #b8b5ff;
     color: #7868e6;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
+}
+.card-title{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    color: #1c1c1d;
+}
+.card-text{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    color: #525252;
+}
+.col-md-4 {
+    padding: 20px!important;
+}
   
