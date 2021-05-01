@@ -58,6 +58,13 @@
           <div class = "card-title">We believe you've got great ideas, Share em with us.</div>
         </div>
       </div>
+  
+  <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <span class="input-group-text" id="basic-addon2">Add</span>
+  </div>
+</div>
     </div>
   </div>
   </body>
