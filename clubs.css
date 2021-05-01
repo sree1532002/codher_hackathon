@@ -5,6 +5,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     color: #1c1c1d;
+    background-color: #fff0f2;
 }
 .about{
 padding: 30px;
@@ -23,6 +24,9 @@ font-size: x-large;
     text-decoration: none;
     display: inline-block;
 }
+.card {
+    border: none!important;
+}
 .card-title{
     text-align: left;
     font-size: 30px;
@@ -37,5 +41,8 @@ font-size: x-large;
 }
 .col-md-4 {
     padding: 20px!important;
+}
+.input-group{
+    padding-right: 20px!important;
 }
   

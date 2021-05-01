@@ -46,25 +46,27 @@
   </div>
   <div class = "welcome">Welcome to the Astronomy Club!</div>
   <div class="card mb-3" style="max-width: 100%;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="Images/galaxy.jpg" class="card-img" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Get to know us!</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <div class = "ideas">
-          <div class = "card-title">We believe you've got great ideas, Share em with us.</div>
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="Images/galaxy.jpg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Get to know us!</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class = "ideas">
+            <div class = "card-title">We believe you've got great ideas, Share em with us.</div>
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">Add</span>
+          </div>
+          </div>
+          <div class = "card-title">Found us interesting? Come be a part of this family!</div>
+          <div class = "logbtn col-md-12"><button type="submit" class="btn btn-primary" name = "login">Join the club</button></div>
         </div>
       </div>
-  
-  <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
-  <div class="input-group-append">
-    <span class="input-group-text" id="basic-addon2">Add</span>
-  </div>
-</div>
     </div>
   </div>
   </body>
