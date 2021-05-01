@@ -17,31 +17,37 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class>
-    <div class="bg-img" class="float-container">
+<body class="container-fluid">
+    <div class="bg-img" class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#b8b5ff;">
       <div id = "p" class="float-child">
         <ul class="nav justify-content-end">
+        <li class="nav-item" >
+            <a class="nav-link"  id = "item" href="#about">Home</a>
+          </li>
           <li class="nav-item" >
             <a class="nav-link"  id = "item" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="gallery.html">Gallery</a>
+            <a class="nav-link" id = "item" href="gallery.html">Clubs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="blog.html">Blogs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id = "item" href="#">Services</a>
+            <a class="nav-link" id = "item" href="blog.html">Announcements</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id = "item" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id = "item" href="#">Logout</a>
           </li>
         </ul>
       </div>
     </div>
     <div id="bg">
         <h1 class="mm">About</h1>
+        <div class="about">
+        <p >Getting involved in an extracurricular club could be one of the highlights of your time on campus. Whether you’re a head-of-the-class, perfect-GPA, volunteers-at-the-nursing-home-on-weekends kind of student, or a stay-out-late-on-Thursday, avoid-taking-classes-on-Friday-morning, in-it-for-the-personal-growth type of student, there’s an activity out there for you. And in many cases, that club could plug you into a national network of like-minded groups, individuals, and possibly even future employers. </p>
+        </div>
     </div>
     <div id="bg">
         <h1 class="mm">Clubs</h1>

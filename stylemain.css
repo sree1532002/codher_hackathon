@@ -1,32 +1,26 @@
-body{
-  position : absolute;
-  width: 100%;
+  body{
+    position : absolute;
+ 
+    padding :0px!important;
 }
-#stylehome{
+  #stylehome{
     background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
 }
-#bg{
+  #bg{
       background-image: url("images/sliderbg.jpg");
       background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
 }
-    
-    #menucard1{
-      margin-left: 90px;
-    }
-    #moremenu{
-      margin-left: 660px;
-      width:200px;
-      height:60px;
-      padding:3px;
-      border-radius: 30px;
-      font-size: x-large;
-    }
-    .bg-img {
+  .about{
+  padding: 30px;
+  font-size: x-large;
+}
+
+  .bg-img {
         background-image: url("Images/mainpic.png");
         height: 800px;
         width: 100%;
@@ -63,7 +57,7 @@ body{
         font-size: 20px;
       }
       #item:hover, #item:active {
-        background-color: #252535;
+        background-color: #b8b5ff;
         color: #7868e6;
         padding: 14px 25px;
         text-align: center;
@@ -75,7 +69,7 @@ body{
         font-family: 'Dancing Script', cursive;
         font-size: 110px;
         color: #faf3e0;
-        padding:100px;
+        padding:50px;
       }
       .btn-primary {
         background-color: #b8b5ff!important;
@@ -145,6 +139,7 @@ body{
     .card-deck{
 
       padding: 50px;
+      margin:0px!important;
       
 
     }
