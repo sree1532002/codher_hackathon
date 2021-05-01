@@ -14,7 +14,7 @@
   </head>
   <body>
    <!-- Footer -->
-<footer class="page-footer font-small unique-color-dark">
+<footer class="page-footer font-small unique-color-dark" id ="footer">
 
 <div style="background-color: #b8b5ff;">
   <div class="container">

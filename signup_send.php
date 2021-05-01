@@ -22,7 +22,7 @@ if (isset($_POST['signup'])) {
   if($count > 0){
     echo "<script>";
     echo "alert('Username already exists!!');";
-    echo "window.location.href='index.php';";
+    echo "window.location.href='main.php';";
     echo "</script>";
   }
   else{
@@ -35,7 +35,7 @@ if (isset($_POST['signup'])) {
     echo "</script>";
     if(mysqli_query($con, $sql1)){
         echo "<script>";
-        echo "window.location.href='index.php';";
+        echo "window.location.href='main.php';";
         echo "</script>";
     }
     else{
@@ -50,7 +50,7 @@ if (isset($_POST['signup'])) {
 else{
     echo "<script>";
     echo "alert('Access denied');";
-    echo "window.location.href='index.php';";
+    echo "window.location.href='main.php';";
     echo "</script>";
 }
 ?>

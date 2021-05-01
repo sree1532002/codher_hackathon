@@ -1,16 +1,21 @@
+<?php
+session_start();
+if(isset($_SESSION['login'])){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Herbo Organic Farming</title>
+  <title>Uniclub | Home</title>
   <link rel="icon" href="images/logo.jpeg" type="image/icon type">
   <meta charset="utf-8">
   <link rel="stylesheet" href="stylecards.css">
   <link rel="stylesheet" href="stylemain.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="icon" href="logo.jpeg" type="image/icon type">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -23,33 +28,33 @@
       <div id = "p" class="float-child">
         <ul class="nav justify-content-end">
         <li class="nav-item" >
-            <a class="nav-link"  id = "item" href="#about">Home</a>
+            <a class="nav-link"  id = "item" href="#">Home</a>
           </li>
           <li class="nav-item" >
-            <a class="nav-link"  id = "item" href="#about">About</a>
+            <a class="nav-link"  id = "item" href="main.php#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="gallery.html">Clubs</a>
+            <a class="nav-link" id = "item" href="#clubs">Clubs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="blog.html">Announcements</a>
+            <a class="nav-link" id = "item" href="ann.php">Announcements</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id = "item" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="#">Logout</a>
+            <a class="nav-link" id = "item" href="logout.php">Logout</a>
           </li>
         </ul>
       </div>
     </div>
-    <div id="bg">
+    <div id="bg" id = "about">
         <h1 class="mm">About</h1>
         <div class="about">
         <p >Getting involved in an extracurricular club could be one of the highlights of your time on campus. Whether you’re a head-of-the-class, perfect-GPA, volunteers-at-the-nursing-home-on-weekends kind of student, or a stay-out-late-on-Thursday, avoid-taking-classes-on-Friday-morning, in-it-for-the-personal-growth type of student, there’s an activity out there for you. And in many cases, that club could plug you into a national network of like-minded groups, individuals, and possibly even future employers. </p>
         </div>
     </div>
-    <div id="bg">
+    <div id="bg" id = "clubs">
         <h1 class="mm">Clubs</h1>
     </div>
     <!-- clubs-->
@@ -99,25 +104,6 @@
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -141,3 +127,10 @@ function topFunction() {
 </div>
 </body>
 </html>
+<?php }else{
+  echo "<script>";
+  echo "alert('Please login/signup to continue');";
+  echo "window.location.href='main.php';";
+  echo "</script>";
+}
+?>
