@@ -5,7 +5,6 @@
     padding-top: 20px;
 }
 .gridimg {
-    background-image: url("Images/galaxy.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -14,3 +13,22 @@
 .grid {
     height: 500px;
 }
+
+.about{
+padding: 30px;
+font-size: x-large;
+}
+#item{
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  #item:hover, #item:active {
+    background-color: #b8b5ff;
+    color: #7868e6;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
