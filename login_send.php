@@ -17,7 +17,7 @@ if (isset($_POST['login'])){
       if(mysqli_query($con, $sql)){
         echo "<script>";
         echo "alert('Login successful!');";
-        echo "window.location.href='signup.php';";
+        echo "window.location.href='main.php';";
         echo "</script>";
         }
         else{
@@ -31,7 +31,7 @@ if (isset($_POST['login'])){
         if(mysqli_query($con, $sql1)){
             echo "<script>";
             echo "alert('Login successful!');";
-            echo "window.location.href='signup.php';";
+            echo "window.location.href='main.php';";
             echo "</script>";
         }
         else{
@@ -41,7 +41,7 @@ if (isset($_POST['login'])){
     else {
         echo "<script>";
         echo "alert('Invalid username or password');";
-        echo "window.location.href='signup.php';";
+        echo "window.location.href='main.php';";
         echo "</script>";
     }
   }
