@@ -1,0 +1,16 @@
+.welcome {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.gridimg {
+    background-image: url("Images/galaxy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+.grid {
+    height: 500px;
+}
