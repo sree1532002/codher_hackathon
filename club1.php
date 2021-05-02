@@ -1,3 +1,10 @@
+<?php 
+session_start();
+include 'db.php';
+$uname = $_SESSION['uname'];
+$sql = "SELECT idea FROM club1 WHERE uname = '$uname'";
+$result = mysqli_query($con,$sql);
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -57,24 +64,28 @@
             <div class = "card-title">We believe you've got great ideas, Share em with us.</div>
           </div>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
+          <form action = "addidea.php" method = "post">
+            <input type="text" class="form-control" name = 'idea' placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
             <div class="input-group-append">
-            <span class="input-group-text" id="basic-addon2">Add</span>
+                <input type = "hidden" name = "uname" value ="<?php echo $uname;?>">
+                <input type = "hidden" name = "clubno" value ="1">
+                <td><button type="submit" class="btn btn-primary" name = "addidea">Send</button></td>
+          </form>
+            </div>
           </div>
           <div class = "card-title">Here are some ideas posted by enthusiastic members</div>
           <div class="card container-fluid">
-            <div class="card-header">
-                Featured Ideas
-              </div>
               <ul class="list-group list-group-flush">
-                <li class  ="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+              <?php
+                while($row = mysqli_fetch_assoc($result)){
+              ?>
+                <li class  ="list-group-item"><?php echo $row['idea'];?></li>
+               <?php } ?>
               </ul>
             </div>
           </div>
           <div class = "card-title">Found us interesting? Come be a part of this family!</div>
-          <div class = "logbtn col-md-12"><button type="submit" class="btn btn-primary" name = "login">Join the club</button></div>
+          <a href = ''><div class = "logbtn col-md-12"><button type="submit" class="btn btn-primary" name = "login">Join the club</button></div></a>
         </div>
       </div>
 
