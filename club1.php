@@ -44,7 +44,6 @@
         </ul>
       </div>
   </div>
-  <div class = "welcome">Welcome to the Astronomy Club!</div>
   <div class="card mb-3" style="max-width: 100%;">
     <div class="row no-gutters">
       <div class="col-md-4">
@@ -52,7 +51,7 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Get to know us!</h5>
+          <h5 class="card-title">Welcome to the Astronomy Club!</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <div class = "ideas">
             <div class = "card-title">We believe you've got great ideas, Share em with us.</div>
@@ -66,7 +65,7 @@
           <div class = "card-title">Here are some ideas posted by enthusiastic members</div>
           <div class="card container-fluid">
             <div class="card-header">
-                Featured
+                Featured Ideas
               </div>
               <ul class="list-group list-group-flush">
                 <li class  ="list-group-item">Cras justo odio</li>
@@ -78,30 +77,7 @@
           <div class = "card-title">Found us interesting? Come be a part of this family!</div>
           <div class = "logbtn col-md-12"><button type="submit" class="btn btn-primary" name = "login">Join the club</button></div>
         </div>
-        <div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
-</div>
-<div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
-</div>
-<div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
-</div>
-<div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
-</div>
       </div>
-  
-      
-
 
     </div>
   </div>
