@@ -66,7 +66,7 @@ if(isset($_SESSION['login'])){
     <div class="card-body">
       <h5 class="card-title">Astro Club</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="club1.php" class="btn btn-primary">Go</a>
     </div>
   </div>
   <div class="card">
@@ -74,7 +74,7 @@ if(isset($_SESSION['login'])){
     <div class="card-body">
       <h5 class="card-title">Computers Club</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="club2.php" class="btn btn-primary">Go</a>
     </div>
   </div>
   <div class="card">
@@ -82,7 +82,7 @@ if(isset($_SESSION['login'])){
     <div class="card-body">
       <h5 class="card-title">Photography Club</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="club3.php" class="btn btn-primary">Go</a>
     </div>
   </div>
 
@@ -91,7 +91,7 @@ if(isset($_SESSION['login'])){
     <div class="card-body">
       <h5 class="card-title">Cultural Club</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="clu4.php" class="btn btn-primary">Go</a>
     </div>
   </div>
 </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2021 at 11:00 AM
+-- Generation Time: May 02, 2021 at 06:36 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -36,6 +36,78 @@ CREATE TABLE `admin` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `club1`
+--
+
+CREATE TABLE `club1` (
+  `id` int(100) NOT NULL,
+  `uname` varchar(30) NOT NULL,
+  `interested` tinyint(1) NOT NULL DEFAULT 0,
+  `member` tinyint(1) NOT NULL DEFAULT 0,
+  `idea` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `club1`
+--
+
+INSERT INTO `club1` (`id`, `uname`, `interested`, `member`, `idea`) VALUES
+(1, 'Kesh', 1, 1, ''),
+(2, 'Kesh', 1, 1, ''),
+(3, 'Kesh', 1, 1, ''),
+(4, 'Kesh', 1, 1, ''),
+(5, 'Kesh', 1, 1, ''),
+(6, 'Kesh', 1, 1, ''),
+(7, 'Kesh', 1, 1, ''),
+(8, 'Kesh', 1, 1, ''),
+(9, 'Sree', 0, 0, ''),
+(10, 'Sree', 0, 0, 'hello');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `club2`
+--
+
+CREATE TABLE `club2` (
+  `id` int(100) NOT NULL,
+  `uname` varchar(20) NOT NULL,
+  `interested` tinyint(1) NOT NULL DEFAULT 0,
+  `member` tinyint(1) NOT NULL DEFAULT 0,
+  `idea` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `club3`
+--
+
+CREATE TABLE `club3` (
+  `id` int(100) NOT NULL,
+  `uname` varchar(30) NOT NULL,
+  `interested` tinyint(1) NOT NULL DEFAULT 0,
+  `member` tinyint(1) NOT NULL DEFAULT 0,
+  `idea` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `club4`
+--
+
+CREATE TABLE `club4` (
+  `id` int(100) NOT NULL,
+  `uname` varchar(30) NOT NULL,
+  `interested` tinyint(1) NOT NULL DEFAULT 0,
+  `member` tinyint(1) NOT NULL DEFAULT 0,
+  `idea` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `login`
 --
 
@@ -51,7 +123,13 @@ CREATE TABLE `login` (
 
 INSERT INTO `login` (`id`, `uname`, `pword`) VALUES
 (1, 'Sree', 'sree'),
-(2, 'Sree', 'sree');
+(2, 'Sree', 'sree'),
+(3, 'Kesh', 'keshikaa'),
+(4, 'Sree', 'sree'),
+(5, 'Sree', 'sree'),
+(6, 'Sree', 'sree'),
+(7, 'Sree', 'sree'),
+(8, 'Sree', 'sree');
 
 -- --------------------------------------------------------
 
@@ -74,7 +152,8 @@ CREATE TABLE `signup` (
 --
 
 INSERT INTO `signup` (`id`, `name`, `year`, `dept`, `email`, `uname`, `pword`) VALUES
-(1, 'Sreeratcha', 2, 'CSE', 'r@gmail.com', 'Sree', 'sree');
+(1, 'Sreeratcha', 2, 'CSE', 'r@gmail.com', 'Sree', 'sree'),
+(2, 'Keshikaa', 2, 'CSE', 'ratchabala@gmail.com', 'Kesh', 'keshikaa');
 
 --
 -- Indexes for dumped tables
@@ -84,6 +163,30 @@ INSERT INTO `signup` (`id`, `name`, `year`, `dept`, `email`, `uname`, `pword`) V
 -- Indexes for table `admin`
 --
 ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `club1`
+--
+ALTER TABLE `club1`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `club2`
+--
+ALTER TABLE `club2`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `club3`
+--
+ALTER TABLE `club3`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `club4`
+--
+ALTER TABLE `club4`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -109,16 +212,40 @@ ALTER TABLE `admin`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `club1`
+--
+ALTER TABLE `club1`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `club2`
+--
+ALTER TABLE `club2`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `club3`
+--
+ALTER TABLE `club3`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `club4`
+--
+ALTER TABLE `club4`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `signup`
 --
 ALTER TABLE `signup`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

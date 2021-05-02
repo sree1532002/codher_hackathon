@@ -1,10 +1,3 @@
-<?php 
-session_start();
-include 'db.php';
-$uname = $_SESSION['uname'];
-$sql = "SELECT idea FROM club1";
-$result = mysqli_query($con,$sql);
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -31,22 +24,22 @@ $result = mysqli_query($con,$sql);
       <div id = "p" class="float-child">
         <ul class="nav justify-content-end">
         <li class="nav-item" >
-            <a class="nav-link"  id = "item" href="main.php">Home</a>
+            <a class="nav-link"  id = "item" href="#about">Home</a>
           </li>
           <li class="nav-item" >
-            <a class="nav-link"  id = "item" href="main.php#about">About</a>
+            <a class="nav-link"  id = "item" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="main.php#clubs">Clubs</a>
+            <a class="nav-link" id = "item" href="gallery.html">Clubs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="ann.php">Announcements</a>
+            <a class="nav-link" id = "item" href="blog.html">Announcements</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="main.php#contact">Contact</a>
+            <a class="nav-link" id = "item" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="logout.php">Logout</a>
+            <a class="nav-link" id = "item" href="#">Logout</a>
           </li>
         </ul>
       </div>
@@ -54,43 +47,40 @@ $result = mysqli_query($con,$sql);
   <div class="card mb-3" style="max-width: 100%;">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="Images/galaxy.jpg" class="card-img" alt="...">
+        <img src="Images/computer.jpg" class="card-img" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Welcome to the Astronomy Club!</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title">Welcome to the Computers Club!</h5>
+        
+          <p class="card-text">This Club consists of computer enthusiasts and technically minded hobbyists as the executive members. The main vision of the club is to expose the students to the latest advancements in computer technology and give individuals an opportunity for sharing and extending ideas, views and knowledge in the field of computers and fast changing technology.
+            The club provides a strong platform for the engineering students to practically implement their innovative ideas in computer for different applications. The Club offers indispensible guidance, workshops and organizes various events for students to explore their full potential.</p>
           <div class = "ideas">
             <div class = "card-title">We believe you've got great ideas, Share em with us.</div>
           </div>
           <div class="input-group mb-3">
-            <form action = "addidea.php" method = "post">
-              <div class="input-group-append container-fluid">
-              <input type="text" class="form-control" name = 'idea' placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
-            <button type="submit" class="btn btn-primary" name = "addidea"> Add</button>  
-              </div>
-              <div class="input-group-append">
-                  <input type = "hidden" name = "uname" value ="<?php echo $uname;?>">
-                  <input type = "hidden" name = "clubno" value ="1">
-              </div>
-            </form>
+            <input type="text" class="form-control" placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">Add</span>
+          </div>
           </div>
           <div class = "card-title">Here are some ideas posted by enthusiastic members</div>
           <div class="card container-fluid">
-            <ul class="list-group list-group-flush">
-            <div class="card-header">Featured Ideas</div>
-              <?php
-                while($row = mysqli_fetch_assoc($result)){
-              ?>
-              <li class  ="list-group-item"><?php echo $row['idea'];?></li>
-              <?php } ?>
-            </ul>
+            <div class="card-header">
+                Featured Ideas
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class  ="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
             </div>
           </div>
           <div class = "card-title">Found us interesting? Come be a part of this family!</div>
-          <a href = ''><div class = "logbtn col-md-12"><button type="submit" class="btn btn-primary" name = "login">Join the club</button></div></a>
+          <div class = "logbtn col-md-12"><button type="submit" class="btn btn-primary" name = "login">Join the club</button></div>
         </div>
       </div>
+
     </div>
   </div>
   </body>
