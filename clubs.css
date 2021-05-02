@@ -46,8 +46,48 @@ font-size: x-large;
 
 .card-body{
     padding: 10px;
-
 }
 .input-group{
     padding-right: 20px!important;
+}
+.logbtn {
+    background-color: #b8b5ff;
+    color:#1c1c1d;
+    border-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 3px!important;
+}
+.btn:hover{
+    background-color: #b8b5ff;
+}
+.addbtn {
+    border-left: 0px;
+}
+. {
+    border-right: 0px;
+}
+.card-header {
+    background-color:#fff6f7;
+    color: #1c1c1d;
+    font-size: 20px;
+    font-weight: 600;
+}
+.ideasd {
+    padding-left: 0px;
+}
+.idea {
+    padding-left: 0px;
+}
+.ideatxt{
+    width: 100%;
+}
+.join1.btn.btn-primary {
+    padding: 5 20px;
+    background-color: #b8b5ff;
+    color:#1c1c1d;
+    border-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 3px!important;
 }
