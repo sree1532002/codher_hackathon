@@ -24,6 +24,8 @@ $result = mysqli_query($con,$sql);
 
     <!--CSS Style-->
     <link rel = "stylesheet" href = "clubs.css">
+  
+    
   </head>
   <body>
   <div class="bg-img" class="container-fluid">
@@ -43,10 +45,13 @@ $result = mysqli_query($con,$sql);
             <a class="nav-link" id = "item" href="ann.php">Announcements</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="main.php#contact">Contact</a>
+            <a class="nav-link" id = "item" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id = "item" href="logout.php">Logout</a>
+          </li>
+          <li class="nav-item">
+            <img src="logo.jpeg" style="height:100%;width:100px;float:left;margin-left:620px">
           </li>
         </ul>
       </div>
@@ -93,5 +98,27 @@ $result = mysqli_query($con,$sql);
       </div>
     </div>
   </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  <?php include "footer.php"?>
   </body>
   </html>
