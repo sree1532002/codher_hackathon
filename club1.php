@@ -69,10 +69,10 @@ $result = mysqli_query($con,$sql);
             <div class = "card-title">We believe you've got great ideas, Share em with us.</div>
           </div>
           <div class="input-group mb-3">
-            <form action = "addidea.php" method = "post">
-              <div class="input-group-append container-fluid">
-              <input type="text" class="form-control" name = 'idea' placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
-            <button type="submit" class="btn btn-primary" name = "addidea"> Add</button>  
+            <form action = "addidea.php" method = "post" class = "ideatxt">
+              <div class="input-group-append idea">
+                <input type="text" class="form-control" name = 'idea' placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
+                <button type="submit" class="logbtn addbtn btn btn-primary" name = "addidea">Add</button>  
               </div>
               <div class="input-group-append">
                   <input type = "hidden" name = "uname" value ="<?php echo $uname;?>">
@@ -81,7 +81,7 @@ $result = mysqli_query($con,$sql);
             </form>
           </div>
           <div class = "card-title">Here are some ideas posted by enthusiastic members</div>
-          <div class="card container-fluid">
+          <div class="card container-fluid ideasd">
             <ul class="list-group list-group-flush">
             <div class="card-header">Featured Ideas</div>
               <?php
@@ -90,10 +90,11 @@ $result = mysqli_query($con,$sql);
               <li class  ="list-group-item"><?php echo $row['idea'];?></li>
               <?php } ?>
             </ul>
-            </div>
           </div>
-          <div class = "card-title">Found us interesting? Come be a part of this family!</div>
-          <a href = ''><div class = "logbtn col-md-12"><button type="submit" class="btn btn-primary" name = "login">Join the club</button></div></a>
+          <div class = "join">
+            <div class = "card-title">Found us interesting? Come be a part of this family!</div>
+            <a href = ''><button type="submit" class="join1 btn btn-primary" name = "login">Join the club</button></a>
+          </div>
         </div>
       </div>
     </div>
