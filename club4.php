@@ -24,7 +24,22 @@ $result = mysqli_query($con,$sql);
 
     <!--CSS Style-->
     <link rel = "stylesheet" href = "clubs.css">
-  
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     
   </head>
   <body>
@@ -59,14 +74,19 @@ $result = mysqli_query($con,$sql);
   <div class="card mb-3" style="max-width: 100%;">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="Images/galaxy.jpg" class="card-img" alt="...">
+        <img src="Images/club4.jpg" class="card-img" alt="..." style="height: 30%">
       </div>
       <div class="col-md-8">
         <div class="card-body">
+<<<<<<< HEAD
+          <h5 class="card-title">Welcome to the Astronomy Club!</h5>
+          <p class="card-text">Singing. Dancing. Theatre. Literature</p>
+=======
           <h5 class="card-title">Welcome to the Cultural Club!</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+>>>>>>> ba29b202d71f424afa07a9f3d0e8160f3e51a6a1
           <div class = "ideas">
-            <div class = "card-title">We believe you've got great ideas, Share em with us.</div>
+            <div class = "card-title1">We believe you've got great ideas, Share em with us.</div>
           </div>
           <div class="input-group mb-3">
             <form action = "addidea.php" method = "post" class = "ideatxt">
@@ -80,7 +100,7 @@ $result = mysqli_query($con,$sql);
               </div>
             </form>
           </div>
-          <div class = "card-title">Here are some ideas posted by enthusiastic members</div>
+          <div class = "card-title1">Here are some ideas posted by enthusiastic members</div>
           <div class="card container-fluid ideasd">
             <ul class="list-group list-group-flush">
             <div class="card-header feature">Featured Ideas</div>
@@ -92,7 +112,7 @@ $result = mysqli_query($con,$sql);
             </ul>
           </div>
           <div class = "join">
-            <div class = "card-title">Found us interesting? Come be a part of this family!</div>
+            <div class = "card-title1">Found us interesting? Come be a part of this family!</div>
             <a href = ''><button type="submit" class="join1 btn btn-primary" name = "login">Join the club</button></a>
           </div>
         </div>
