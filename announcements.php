@@ -19,6 +19,36 @@
     <link rel = "stylesheet" href = "clubs.css">
   </head>
   <body>
+    <!-- navigation bar-->
+    
+    <div class="bg-img" class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#b8b5ff;">
+      <div id = "p" class="float-child">
+        <ul class="nav justify-content-end">
+        <li class="nav-item" >
+            <a class="nav-link"  id = "item" href="#">Home</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link"  id = "item" href="#about1">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id = "item" href="#clubs">Clubs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id = "item" href="ann.php">Announcements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id = "item" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id = "item" href="logout.php">Logout</a>
+          </li>
+          <li class="nav-item">
+            <img src="logo.jpeg" style="height:100%;width:100px;float:left;margin-left:620px">
+          </li>
+        </ul>
+      </div>
+    </div>
 <!-- Section: Social newsfeed v.2 -->
 <section class="my-5">
 

@@ -97,11 +97,16 @@ font-size: x-large;
 .addbtn {
     border-left: 0px;
 }
-. {
+.addbtn.btn.btn-primary {
     border-right: 0px;
+    background-color: #b8b5ff;
+    border-color: white;
+    color:black;
+    font-weight: 600;
 }
+
 .card-header {
-    background-color:#fff6f7;
+    background-color:#ebb2ca;
     color: #1c1c1d;
     font-size: 20px;
     font-weight: 600;
