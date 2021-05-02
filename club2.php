@@ -93,7 +93,7 @@ $result = mysqli_query($con,$sql);
           </div>
           <div class = "join">
             <div class = "card-title">Found us interesting? Come be a part of this family!</div>
-            <a href = ''><button type="submit" class="join1 btn btn-primary" name = "login">Join the club</button></a>
+            <a href = 'mail_process.php'><button type="submit" class="join1 btn btn-primary" name = "login">Join the club</button></a>
           </div>
         </div>
       </div>

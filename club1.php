@@ -3,6 +3,7 @@ session_start();
 include 'db.php';
 $uname = $_SESSION['uname'];
 $sql = "SELECT idea FROM club1";
+$_SESSION['clubno'] = 1;
 $result = mysqli_query($con,$sql);
 ?>
 <!doctype html>
@@ -42,7 +43,7 @@ $result = mysqli_query($con,$sql);
             <a class="nav-link" id = "item" href="main.php#clubs">Clubs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="ann.php">Announcements</a>
+            <a class="nav-link" id = "item" href="announcements.php">Announcements</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id = "item" href="#contact">Contact</a>
@@ -93,7 +94,7 @@ $result = mysqli_query($con,$sql);
           </div>
           <div class = "join">
             <div class = "card-title">Found us interesting? Come be a part of this family!</div>
-            <a href = ''><button type="submit" class="join1 btn btn-primary" name = "login">Join the club</button></a>
+            <a href = 'mail_process.php'><button type="submit" class="join1 btn btn-primary" name = "login">Join the club</button></a>
           </div>
         </div>
       </div>

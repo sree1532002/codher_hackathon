@@ -37,7 +37,7 @@ if(isset($_SESSION['login'])){
             <a class="nav-link" id = "item" href="#clubs">Clubs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="ann.php">Announcements</a>
+            <a class="nav-link" id = "item" href="announcements.php">Announcements</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id = "item" href="#contact">Contact</a>
