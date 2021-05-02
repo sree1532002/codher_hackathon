@@ -2,7 +2,7 @@
 session_start();
 include 'db.php';
 $uname = $_SESSION['uname'];
-$sql = "SELECT idea FROM club1 WHERE uname = '$uname'";
+$sql = "SELECT idea FROM club1";
 $result = mysqli_query($con,$sql);
 ?>
 <!doctype html>
@@ -31,22 +31,22 @@ $result = mysqli_query($con,$sql);
       <div id = "p" class="float-child">
         <ul class="nav justify-content-end">
         <li class="nav-item" >
-            <a class="nav-link"  id = "item" href="#about">Home</a>
+            <a class="nav-link"  id = "item" href="main.php">Home</a>
           </li>
           <li class="nav-item" >
-            <a class="nav-link"  id = "item" href="#about">About</a>
+            <a class="nav-link"  id = "item" href="main.php#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="gallery.html">Clubs</a>
+            <a class="nav-link" id = "item" href="main.php#clubs">Clubs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="blog.html">Announcements</a>
+            <a class="nav-link" id = "item" href="ann.php">Announcements</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="#contact">Contact</a>
+            <a class="nav-link" id = "item" href="main.php#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="#">Logout</a>
+            <a class="nav-link" id = "item" href="logout.php">Logout</a>
           </li>
         </ul>
       </div>
