@@ -73,6 +73,7 @@ $result = mysqli_query($con,$sql);
           </form>
             </div>
           </div>
+          </div>
           <div class = "card-title">Here are some ideas posted by enthusiastic members</div>
           <div class="card container-fluid">
               <ul class="list-group list-group-flush">
