@@ -37,7 +37,7 @@ if(isset($_SESSION['login'])){
             <a class="nav-link" id = "item" href="#clubs">Clubs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="ann.php">Announcements</a>
+            <a class="nav-link" id = "item" href="announcements.php">Announcements</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id = "item" href="#contact">Contact</a>
@@ -94,7 +94,7 @@ if(isset($_SESSION['login'])){
     <div class="card-body">
       <h5 class="card-title">Cultural Club</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <a href="clu4.php" class="btn btn-primary">Go</a>
+      <a href="club4.php" class="btn btn-primary">Go</a>
     </div>
   </div>
 </div>

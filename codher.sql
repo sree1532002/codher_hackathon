@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2021 at 06:36 AM
+-- Generation Time: May 02, 2021 at 10:24 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -33,6 +33,27 @@ CREATE TABLE `admin` (
   `pword` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `uname`, `pword`) VALUES
+(1, 'club1', 'club1'),
+(2, 'club2', 'club2'),
+(3, 'club3', 'club3'),
+(4, 'club4', 'club4');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ann`
+--
+
+CREATE TABLE `ann` (
+  `id` varchar(100) NOT NULL,
+  `feed` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- --------------------------------------------------------
 
 --
@@ -52,16 +73,9 @@ CREATE TABLE `club1` (
 --
 
 INSERT INTO `club1` (`id`, `uname`, `interested`, `member`, `idea`) VALUES
-(1, 'Kesh', 1, 1, ''),
-(2, 'Kesh', 1, 1, ''),
-(3, 'Kesh', 1, 1, ''),
-(4, 'Kesh', 1, 1, ''),
-(5, 'Kesh', 1, 1, ''),
-(6, 'Kesh', 1, 1, ''),
-(7, 'Kesh', 1, 1, ''),
-(8, 'Kesh', 1, 1, ''),
-(9, 'Sree', 0, 0, ''),
-(10, 'Sree', 0, 0, 'hello');
+(10, 'Sree', 0, 0, 'hello'),
+(40, 'Rax', 0, 0, ''),
+(42, 'Rax', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -129,7 +143,10 @@ INSERT INTO `login` (`id`, `uname`, `pword`) VALUES
 (5, 'Sree', 'sree'),
 (6, 'Sree', 'sree'),
 (7, 'Sree', 'sree'),
-(8, 'Sree', 'sree');
+(8, 'Sree', 'sree'),
+(9, 'Sree', 'sree'),
+(10, 'Sree', 'sree'),
+(11, 'Rax', 'raksha');
 
 -- --------------------------------------------------------
 
@@ -153,7 +170,8 @@ CREATE TABLE `signup` (
 
 INSERT INTO `signup` (`id`, `name`, `year`, `dept`, `email`, `uname`, `pword`) VALUES
 (1, 'Sreeratcha', 2, 'CSE', 'r@gmail.com', 'Sree', 'sree'),
-(2, 'Keshikaa', 2, 'CSE', 'ratchabala@gmail.com', 'Kesh', 'keshikaa');
+(2, 'Keshikaa', 2, 'CSE', 'ratchabala@gmail.com', 'Kesh', 'keshikaa'),
+(3, 'Sreeratcha', 2, 'CSE', 'r@gmail.com', 'Rax', 'raksha');
 
 --
 -- Indexes for dumped tables
@@ -209,13 +227,13 @@ ALTER TABLE `signup`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `club1`
 --
 ALTER TABLE `club1`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `club2`
@@ -239,13 +257,13 @@ ALTER TABLE `club4`
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `signup`
 --
 ALTER TABLE `signup`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

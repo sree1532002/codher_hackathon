@@ -94,7 +94,7 @@
         <a href="club3.php">Photography club</a>
       </p>
       <p>
-        <a href="club4.php!">Cultural Club</a>
+        <a href="club4.php">Cultural Club</a>
       </p>
 
     </div>

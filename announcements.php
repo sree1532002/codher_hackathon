@@ -1,3 +1,13 @@
+<?php 
+session_start();
+include 'db.php';
+$uname = $_SESSION['uname'];
+$sql = "SELECT feed FROM ann";
+$result = mysqli_query($con,$sql);
+$sql1 = "SELECT uname FROM admin";
+$result1 = $con->query($sql1);
+$count = $result1->num_rows;
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -42,16 +52,16 @@
       <div id = "p" class="float-child">
         <ul class="nav justify-content-end">
         <li class="nav-item" >
-            <a class="nav-link"  id = "item" href="#">Home</a>
+            <a class="nav-link"  id = "item" href="main.php">Home</a>
           </li>
           <li class="nav-item" >
-            <a class="nav-link"  id = "item" href="#about1">About</a>
+            <a class="nav-link"  id = "item" href="main.php#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="#clubs">Clubs</a>
+            <a class="nav-link" id = "item" href="main.php#clubs">Clubs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id = "item" href="ann.php">Announcements</a>
+            <a class="nav-link" id = "item" href="#">Announcements</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id = "item" href="#contact">Contact</a>
@@ -86,14 +96,18 @@
             <div class="discover">Catch the latest news here!</div>
             <div class = "subtext">Here's a single destination to get all the announcements regarding your favourite club activities.</div> 
             <div class = "ideas">
+            <?php 
+            if($count >= 1){
+            ?>
             <div class = "card-title">Post a Message right here!</div>
           </div>
           <div class="input-group mb-3">
-            <form action = "addidea.php" method = "post" class = "ideatxt">
+            <form action = "addann.php" method = "post" class = "ideatxt">
               <div class="input-group-append idea">
-                <input type="text" class="form-control" name = 'idea' placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
-                <button type="submit" class="logbtn addbtn btn btn-primary" name = "addidea">Post!</button>  
+                <input type="text" name = "feeddata" class="form-control" name = 'idea' placeholder="Add" aria-label="Recipient's idea" aria-describedby="basic-addon2">
+                <button type="submit" class="logbtn addbtn btn btn-primary" name = "addann">Post</button>  
               </div>
+              <?php }?>
               <div class="input-group-append">
                   <input type = "hidden" name = "uname" value ="<?php echo $uname;?>">
                   <input type = "hidden" name = "clubno" value ="1">
@@ -107,7 +121,7 @@
               <?php
                 while($row = mysqli_fetch_assoc($result)){
               ?>
-              <li class  ="list-group-item"><?php echo $row['idea'];?></li>
+              <li class  ="list-group-item"><?php echo $row['feed'];?></li>
               <?php } ?>
             </ul>
           </div>

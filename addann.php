@@ -2,9 +2,9 @@
 if(isset($_POST['addann'])){
     session_start();
     include('db.php');
-    $ann = $con->real_escape_string($_POST['ann']);
-    $ann = stripcslashes($ann);
-    $sql = "INSERT INTO ann (feed) VALUES ('$ann')";
+    $feeddata = $con->real_escape_string($_POST['feeddata']);
+    $feeddata = stripcslashes($feeddata);
+    $sql = "INSERT INTO ann (feed) VALUES ('$feeddata')";
     if(mysqli_query($con, $sql)){
         echo "<script>";
         echo "alert('Announcement added');";

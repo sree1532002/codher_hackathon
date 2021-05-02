@@ -7,7 +7,27 @@
     padding: 30px 20px;
     background-color: rgb(255, 255, 255);
   }
-  
+  #item:link, #item:visited {
+       
+    color: #0c0c0c;
+    padding: 14px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  #item{
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  #item:hover, #item:active {
+    background-color: #b8b5ff;
+    color: #7868e6;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
   .menulink {
     text-align: center;
   }
