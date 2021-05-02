@@ -76,7 +76,7 @@ $result = mysqli_query($con,$sql);
               </div>
               <div class="input-group-append">
                   <input type = "hidden" name = "uname" value ="<?php echo $uname;?>">
-                  <input type = "hidden" name = "clubno" value ="1">
+                  <input type = "hidden" name = "clubno" value ="2">
               </div>
             </form>
           </div>
