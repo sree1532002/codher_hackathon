@@ -78,13 +78,8 @@ $result = mysqli_query($con,$sql);
       </div>
       <div class="col-md-8">
         <div class="card-body">
-<<<<<<< HEAD
-          <h5 class="card-title">Welcome to the Astronomy Club!</h5>
-          <p class="card-text">Singing. Dancing. Theatre. Literature</p>
-=======
           <h5 class="card-title">Welcome to the Cultural Club!</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
->>>>>>> ba29b202d71f424afa07a9f3d0e8160f3e51a6a1
           <div class = "ideas">
             <div class = "card-title1">We believe you've got great ideas, Share em with us.</div>
           </div>
@@ -113,7 +108,7 @@ $result = mysqli_query($con,$sql);
           </div>
           <div class = "join">
             <div class = "card-title1">Found us interesting? Come be a part of this family!</div>
-            <a href = ''><button type="submit" class="join1 btn btn-primary" name = "login">Join the club</button></a>
+            <a href = 'mail_process.php'><button type="submit" class="join1 btn btn-primary" name = "login">Join the club</button></a>
           </div>
         </div>
       </div>

@@ -50,7 +50,10 @@ if(isset($_SESSION['login'])){
           </li>
         </ul>
       </div>
+      </nav>
+      <div class ="uni">Uniclub</div>
     </div>
+
     <div id="bg">
         <h1 class="mm" id = "about1">About</h1>
         <div class="about">

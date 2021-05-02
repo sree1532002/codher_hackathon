@@ -107,13 +107,8 @@ $result = mysqli_query($con,$sql);
             </ul>
           </div>
           <div class = "join">
-<<<<<<< HEAD
-            <div class = "card-title1">Found us interesting? Come be a part of this family!</div>
-            <a href = ''><button type="submit" class="join1 btn btn-primary" name = "login">Join the club</button></a>
-=======
             <div class = "card-title">Found us interesting? Come be a part of this family!</div>
             <a href = 'mail_process.php'><button type="submit" class="join1 btn btn-primary" name = "login">Join the club</button></a>
->>>>>>> ba29b202d71f424afa07a9f3d0e8160f3e51a6a1
           </div>
         </div>
       </div>

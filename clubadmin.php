@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head><link rel="icon" href="images/logo.jpeg" type="image/icon type"></head>
 <?php
 session_start();
 if(isset($_SESSION["uname"]))

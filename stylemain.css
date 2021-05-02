@@ -19,7 +19,12 @@
   padding: 30px;
   font-size: x-large;
 }
-
+.uni{
+  text-align: center!important;
+  font-family: 'Dancing Script', cursive!important;
+  font-size: 150px!important;
+  color: #7868e6!important;
+}
   .bg-img {
         background-image: url("Images/mainpic.png");
         height: 800px;
