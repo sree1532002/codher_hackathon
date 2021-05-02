@@ -62,6 +62,17 @@
             <div class="input-group-append">
             <span class="input-group-text" id="basic-addon2">Add</span>
           </div>
+          <div class = "card-title">Here are some ideas posted by enthusiastic members</div>
+          <div class="card container-fluid">
+            <div class="card-header">
+                Featured
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class  ="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+            </div>
           </div>
           <div class = "card-title">Found us interesting? Come be a part of this family!</div>
           <div class = "logbtn col-md-12"><button type="submit" class="btn btn-primary" name = "login">Join the club</button></div>
