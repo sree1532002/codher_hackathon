@@ -74,12 +74,12 @@ $result = mysqli_query($con,$sql);
   <div class="card mb-3" style="max-width: 100%;">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="Images/galaxy.jpg" class="card-img" alt="...">
+        <img src="Images/club4.jpg" class="card-img" alt="..." style="height: 30%">
       </div>
       <div class="col-md-8">
         <div class="card-body">
           <h5 class="card-title">Welcome to the Astronomy Club!</h5>
-          <p class="card-text">Singing. Dancing. Theatre. </p>
+          <p class="card-text">Singing. Dancing. Theatre. Literature</p>
           <div class = "ideas">
             <div class = "card-title1">We believe you've got great ideas, Share em with us.</div>
           </div>
