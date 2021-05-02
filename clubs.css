@@ -11,14 +11,29 @@
 padding: 30px;
 font-size: x-large;
 }
+#p.align-right ul li{
+    position: relative;
+    float: right;
+}
+#alignnav{
+    position:fixed;
+}
 #item{
     margin: 10px;
     border-radius: 10px;
     font-size: 20px;
 }
+#item:link, #item:visited {
+       
+    color: #0c0c0c;
+    padding: 14px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
 #item:hover, #item:active {
     background-color: #b8b5ff;
-    color: #7868e6;
+    color: #6651f0;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
