@@ -63,9 +63,19 @@ font-size: x-large;
 }
 .card-title{
     text-align: left;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #1c1c1d;
+    font-family: "Dancing Script", cursive;
+}
+.card-title1{
+    color: #1a1c20;
+    font-size: 29px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    text-align: left;
 }
 .card-text{
     text-align: left;
