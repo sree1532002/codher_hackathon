@@ -78,6 +78,29 @@
           <div class = "logbtn col-md-12"><button type="submit" class="btn btn-primary" name = "login">Join the club</button></div>
         </div>
       </div>
+  
+      <div class="card">
+  <div class="card-body">
+    This is some text within a card body.
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    This is some text within a card body.
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    This is some text within a card body.
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    This is some text within a card body.
+  </div>
+</div>
+
+
     </div>
   </div>
   </body>
