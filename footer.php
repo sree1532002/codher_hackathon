@@ -71,11 +71,9 @@
     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
       <!-- Content -->
-      <h6 class="text-uppercase font-weight-bold">Company name</h6>
+      <h6 class="text-uppercase font-weight-bold">College name</h6>
       <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-      <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-        consectetur
-        adipisicing elit.</p>
+      <p style="font-size:20px;">ABC College</p>
 
     </div>
     <!-- Grid column -->
@@ -87,16 +85,16 @@
       <h6 class="text-uppercase font-weight-bold">Products</h6>
       <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
       <p>
-        <a href="#!">MDBootstrap</a>
+        <a href="club1.php">Astro Club</a>
       </p>
       <p>
-        <a href="#!">MDWordPress</a>
+        <a href="club2.php">Computers Club</a>
       </p>
       <p>
-        <a href="#!">BrandFlow</a>
+        <a href="club3.php">Photography club</a>
       </p>
       <p>
-        <a href="#!">Bootstrap Angular</a>
+        <a href="club4.php!">Cultural Club</a>
       </p>
 
     </div>
@@ -109,12 +107,12 @@
       <h6 class="text-uppercase font-weight-bold">Useful links</h6>
       <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
       <p>
-      <a href="https://www.jquery-az.com" class="text-dark">Your Profile</a>
+      <a href="main.php#about1" class="text-dark">Know about us</a>
       </p>
       <p>
-      <a href="https://www.jquery-az.com" class="text-dark">Clubs</a>
+      <a href="main.php#clubs" class="text-dark">Clubs</a>
       </p>
-      <a href="https://www.jquery-az.com" class="text-dark">Help</a>
+      <a href="main.php#contact" class="text-dark">Help</a>
       </p>
 
     </div>
