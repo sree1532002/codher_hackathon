@@ -62,6 +62,7 @@
             <div class="input-group-append">
             <span class="input-group-text" id="basic-addon2">Add</span>
           </div>
+          </div>
           <div class = "card-title">Here are some ideas posted by enthusiastic members</div>
           <div class="card container-fluid">
             <div class="card-header">
