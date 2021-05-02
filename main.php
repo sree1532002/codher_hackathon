@@ -45,6 +45,9 @@ if(isset($_SESSION['login'])){
           <li class="nav-item">
             <a class="nav-link" id = "item" href="logout.php">Logout</a>
           </li>
+          <li class="nav-item">
+            <img src="logo.jpeg" style="height:100%;width:100px;float:left;margin-left:620px">
+          </li>
         </ul>
       </div>
     </div>
