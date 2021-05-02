@@ -1,0 +1,60 @@
+ body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .menu {
+    padding: 30px 20px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .menulink {
+    text-align: center;
+  }
+  .menulink > a {
+    color: #c59d5f;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+  }
+  .menulink > a:hover {
+    text-decoration: underline;
+    text-decoration-color: #c59d5f;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-gap: 30px;
+    padding-left: 30px;
+  }
+  
+  .menuCon {
+    padding: 0 30px;
+    margin-bottom: 100px;
+  }
+  .fgrid {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .discover{
+    text-align: left;
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #1c1c1d;
+    font-family: "Dancing Script", cursive;
+  }
+  .subtext{
+    color: #1a1c20;
+    font-size: 29px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    text-align: left;
+  }
+  
+  
+  

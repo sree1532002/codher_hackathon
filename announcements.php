@@ -16,7 +16,23 @@
     <title>Login</title>
 
     <!--CSS Style-->
-    <link rel = "stylesheet" href = "clubs.css">
+    <link rel = "stylesheet" href = "announcement.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- navigation bar-->
@@ -49,4 +65,54 @@
         </ul>
       </div>
     </div>
+    <div class="menu container-fluid">
+      <div class="row">
+        <div class="col-lg-5 grid">
+          <div>
+            <img src="Images/Gridimg1.jpg" alt="gimg1" class="fgrid" />
+          </div>
+          <div>
+            <img src="Images/Gridimg2.jpg" alt="gimg2" class="fgrid" />
+          </div>
+          <div>
+            <img src="Images/Gridimg3.jpg" alt="gimg3" class="fgrid" />
+          </div>
+          <div>
+            <img src="Images/Gridimg4.jpg" alt="gimg4" class="fgrid" />
+          </div>
+        </div>
+        <div class="col-lg-7 flexContainer">
+          <div class="menuCon">
+            <div class="discover">Catch the latest news here!</div>
+            <div class = "subtext">Here's a single destination to get all the announcements regarding your favourite club activities. You'll never have to worry about missing another open call!</div> 
+            <div class = "ideas">
+            <div class = "card-title">We believe you've got great ideas, Share em with us.</div>
+          </div>
+          <div class="input-group mb-3">
+            <form action = "addidea.php" method = "post" class = "ideatxt">
+              <div class="input-group-append idea">
+                <input type="text" class="form-control" name = 'idea' placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
+                <button type="submit" class="logbtn addbtn btn btn-primary" name = "addidea">Add</button>  
+              </div>
+              <div class="input-group-append">
+                  <input type = "hidden" name = "uname" value ="<?php echo $uname;?>">
+                  <input type = "hidden" name = "clubno" value ="1">
+              </div>
+            </form>
+          </div>
+          <div class = "card-title">Here are some ideas posted by enthusiastic members</div>
+          <div class="card container-fluid ideasd">
+            <ul class="list-group list-group-flush">
+            <div class="card-header feature">Featured Ideas</div>
+              <?php
+                while($row = mysqli_fetch_assoc($result)){
+              ?>
+              <li class  ="list-group-item"><?php echo $row['idea'];?></li>
+              <?php } ?>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 </body>
