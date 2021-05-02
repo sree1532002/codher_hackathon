@@ -60,12 +60,13 @@
             <input type="text" class="form-control" placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
             <div class="input-group-append">
             <span class="input-group-text" id="basic-addon2">Add</span>
+            </div>
           </div>
           <div class = "card-title">Here are some ideas posted by enthusiastic members</div>
           <div class="card container-fluid">
             <div class="card-header">
                 Featured Ideas
-              </div>
+            </div>
               <ul class="list-group list-group-flush">
                 <li class  ="list-group-item">Cras justo odio</li>
                 <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -77,7 +78,6 @@
           <div class = "logbtn col-md-12"><button type="submit" class="btn btn-primary" name = "login">Join the club</button></div>
         </div>
       </div>
-
     </div>
   </div>
   </body>
