@@ -63,7 +63,7 @@ $result = mysqli_query($con,$sql);
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Welcome to the Astronomy Club!</h5>
+          <h5 class="card-title">Welcome to the Cultural Club!</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <div class = "ideas">
             <div class = "card-title">We believe you've got great ideas, Share em with us.</div>

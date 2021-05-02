@@ -67,7 +67,7 @@
     </div>
     <div class="menu container-fluid">
       <div class="row">
-        <div class="col-lg-5 grid">
+        <div class="col-lg-6 grid">
           <div>
             <img src="Images/Gridimg1.jpg" alt="gimg1" class="fgrid" />
           </div>
@@ -81,18 +81,18 @@
             <img src="Images/Gridimg4.jpg" alt="gimg4" class="fgrid" />
           </div>
         </div>
-        <div class="col-lg-7 flexContainer">
+        <div class="col-lg-6 flexContainer">
           <div class="menuCon">
             <div class="discover">Catch the latest news here!</div>
-            <div class = "subtext">Here's a single destination to get all the announcements regarding your favourite club activities. You'll never have to worry about missing another open call!</div> 
+            <div class = "subtext">Here's a single destination to get all the announcements regarding your favourite club activities.</div> 
             <div class = "ideas">
-            <div class = "card-title">We believe you've got great ideas, Share em with us.</div>
+            <div class = "card-title">Post a Message right here!</div>
           </div>
           <div class="input-group mb-3">
             <form action = "addidea.php" method = "post" class = "ideatxt">
               <div class="input-group-append idea">
                 <input type="text" class="form-control" name = 'idea' placeholder="Add your Idea here" aria-label="Recipient's idea" aria-describedby="basic-addon2">
-                <button type="submit" class="logbtn addbtn btn btn-primary" name = "addidea">Add</button>  
+                <button type="submit" class="logbtn addbtn btn btn-primary" name = "addidea">Post!</button>  
               </div>
               <div class="input-group-append">
                   <input type = "hidden" name = "uname" value ="<?php echo $uname;?>">
@@ -100,10 +100,10 @@
               </div>
             </form>
           </div>
-          <div class = "card-title">Here are some ideas posted by enthusiastic members</div>
+          <div class = "card-title">Latest announcements</div>
           <div class="card container-fluid ideasd">
             <ul class="list-group list-group-flush">
-            <div class="card-header feature">Featured Ideas</div>
+            <div class="card-header feature">Important</div>
               <?php
                 while($row = mysqli_fetch_assoc($result)){
               ?>
